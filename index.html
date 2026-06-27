@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonathan Kaufman</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f7f4;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #0b2a45;
+    }
+
+    .card {
+      text-align: center;
+      max-width: 900px;
+      padding: 60px 30px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 82px);
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      margin: 0;
+      color: #071f3a;
+    }
+
+    .line {
+      width: 120px;
+      height: 2px;
+      background: #071f3a;
+      margin: 36px auto;
+    }
+
+    h2 {
+      font-size: clamp(20px, 3vw, 34px);
+      letter-spacing: 0.22em;
+      font-weight: 500;
+      margin: 0 0 28px;
+    }
+
+    .tags {
+      color: #666;
+      font-size: clamp(15px, 2vw, 24px);
+      letter-spacing: 0.18em;
+      margin-bottom: 60px;
+    }
+
+    .contact {
+      display: inline-block;
+      text-align: left;
+      font-size: clamp(18px, 2vw, 26px);
+      color: #222;
+      line-height: 2.2;
+    }
+
+    .contact a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #0b2a45;
+      text-decoration: underline;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 42px;
+      color: #0b2a45;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        letter-spacing: 0.08em;
+      }
+
+      h2, .tags {
+        letter-spacing: 0.12em;
+      }
+
+      .contact {
+        text-align: center;
+      }
+
+      .icon {
+        display: block;
+        margin: 12px auto 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <h1>JONATHAN KAUFMAN</h1>
+
+    <div class="line"></div>
+
+    <h2>BIOTECH FOUNDER &amp; CEO</h2>
+
+    <div class="tags">
+      IPO &nbsp; | &nbsp; CLINICAL DEVELOPMENT &nbsp; | &nbsp; RESTRUCTURING
+    </div>
+
+    <div class="contact">
+      <div>
+        <span class="icon">✉</span>
+        <a href="mailto:jhk12345@gmail.com">jhk12345@gmail.com</a>
+      </div>
+
+      <div>
+        <span class="icon">☎</span>
+        <a href="tel:+14129010315">+1 412-901-0315</a>
+      </div>
+
+      <div>
+        <span class="icon">in</span>
+        <a href="https://www.linkedin.com/in/jonkaufman" target="_blank" rel="noopener">
+          linkedin.com/in/jonkaufman
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
