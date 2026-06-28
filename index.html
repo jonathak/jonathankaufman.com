@@ -23,8 +23,15 @@
       padding: 60px 30px;
     }
 
-    a {
+    .name-link {
       text-decoration: none;
+      color: inherit;
+      transition: opacity 0.2s ease;
+    }
+
+    .name-link:hover {
+      opacity: 0.75;
+      cursor: pointer;
     }
 
     h1 {
@@ -105,7 +112,7 @@
 
 <body>
   <main class="card">
-    <a href="https://www.linkedin.com/in/jonkaufman" target="_blank" rel="noopener">  
+    <a class="name-link" href="https://www.linkedin.com/in/jonkaufman" target="_blank" rel="noopener">  
       <h1>JONATHAN KAUFMAN</h1>
     </a>
 
