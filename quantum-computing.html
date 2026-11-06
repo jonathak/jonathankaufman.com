@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quantum computing: key inventions, algorithms, commercial processors, pricing, intellectual property, and market development.">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <title>Quantum Computing | Jonathan Kaufman</title>
+  <style>
+    :root { --navy:#071f3a; --ink:#263b50; --muted:#536274; --paper:#f8f7f4; --line:#d8d8d4; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.75 "Helvetica Neue",Arial,sans-serif; }
+    .page { width:min(780px,calc(100% - 44px)); margin:0 auto; padding:62px 0 65px; }
+    h1,h2,h3 { color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-weight:400; line-height:1.3; }
+    h1 { font-size:clamp(38px,6vw,55px); margin:30px 0 22px; }
+    h2 { font-size:29px; margin:0 0 22px; }
+    h3 { font-size:22px; margin:0 0 6px; }
+    p { margin:0 0 18px; }
+    a { color:var(--navy); text-underline-offset:4px; }
+    a:focus-visible { outline:2px solid var(--navy); outline-offset:4px; }
+    .home { font-family:Georgia,"Times New Roman",serif; font-size:16px; text-decoration:none; }
+    .home:hover { text-decoration:underline; }
+    .intro { padding-bottom:27px; }
+    section { padding:37px 0; border-top:1px solid var(--line); }
+    article { margin:0 0 26px; }
+    article:last-child { margin-bottom:0; }
+    footer { margin-top:45px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+    @media(max-width:600px) { .page { padding-top:34px; } section { padding:30px 0; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header><a class="home" href="/">← Home</a></header>
+    <div class="intro">
+      <h1>Quantum Computing</h1>
+      <p>Quantum computing is developing into a commercial industry before its principal anticipated computational advantages have been established. Companies including IBM, Google, IonQ, Quantinuum, Rigetti, and QuEra are developing processors based on competing physical architectures. Customers can already access some of these systems through cloud services, although economically significant advantages over conventional computing remain largely experimental.</p>
+      <p>The industry is particularly interesting because progress depends on three distinct kinds of innovation: physical qubit architectures, quantum algorithms, and techniques for performing reliable computation despite errors.</p>
+    </div>
+    <section aria-labelledby="concepts">
+      <h2 id="concepts">Methods &amp; Concepts</h2>
+      <article>
+        <h3>Key Inventions</h3>
+        <p>The Cirac–Zoller trapped-ion gate proposal (1995) established a foundation for ion-based quantum logic, now pursued by IonQ and Quantinuum. The <a href="https://arxiv.org/abs/cond-mat/0703002">transmon superconducting qubit</a>, introduced by Jens Koch and colleagues at Yale (2007), substantially reduced sensitivity to charge noise and helped enable the approaches used by IBM, Google, and Rigetti. Neutral-atom processors developed by companies including QuEra and Atom Computing build on advances in optical trapping, programmable atomic arrays, and Rydberg interactions. Quantum error correction, pioneered by Peter Shor and Andrew Steane in the 1990s, provides the mathematical foundation for constructing reliable logical qubits from imperfect physical systems.</p>
+      </article>
+      <article>
+        <h3>Key Algorithms</h3>
+        <p>Shor's algorithm (1994) established that sufficiently capable quantum computers could efficiently factor large integers, threatening widely used public-key cryptography. Grover's algorithm (1996) provides a quadratic improvement for unstructured search. Quantum phase estimation and Hamiltonian simulation offer potential advantages in molecular and materials calculations. More recent hybrid algorithms, including VQE and QAOA, combine quantum circuits with classical optimization, although general commercial advantages remain unproven.</p>
+      </article>
+      <article>
+        <h3>Commercial Processors &amp; Pricing</h3>
+        <p>IBM offers limited free quantum processor access and paid usage beginning at $96 per minute. Amazon Braket provides access to several architectures using per-task and per-shot pricing. At published rates, executing one circuit 1,000 times costs approximately $0.73 on Rigetti Cepheus, $1.75 on IQM Garnet, $10.30 on QuEra Aquila, or $80.30 on IonQ Forte. These systems have different capabilities, so price per shot is not a measure of relative performance. <a href="https://www.ibm.com/quantum/products">IBM pricing</a> · <a href="https://aws.amazon.com/braket/pricing/">Amazon Braket pricing</a>.</p>
+      </article>
+      <article>
+        <h3>Intellectual Property</h3>
+        <p>Foundational scientific inventions are often decades old, while more recent patents address specific engineering challenges. Examples include <a href="https://patents.google.com/patent/US12602605B2/en">US 12,602,605 B2</a>, concerning trapped-ion gates, and <a href="https://patents.google.com/patent/US11710579B2/en">US 11,710,579 B2</a>, concerning neutral-atom quantum information processing. Their commercial significance depends on the specific patent claims and the extent to which alternative implementations are available.</p>
+      </article>
+    </section>
+    <section aria-labelledby="questions">
+      <h2 id="questions">Questions in Practice</h2>
+      <article>
+        <h3>What are customers paying for today?</h3>
+        <p>IBM's collaboration with Cleveland Clinic, pharmaceutical research partnerships, and enterprise quantum programs demonstrate demand for research infrastructure, experimental computing, and technology development. These activities are economically distinct from purchasing quantum computation that already outperforms conventional alternatives.</p>
+      </article>
+      <article>
+        <h3>Which technical milestones matter most?</h3>
+        <p>Physical qubit counts are an incomplete measure of progress. Gate fidelity, logical error rates, error-correction overhead, and the number of reliable operations required by useful algorithms are more informative indicators of computational capability.</p>
+      </article>
+      <article>
+        <h3>Where are the commercial opportunities?</h3>
+        <p>Hardware developers face substantial engineering and capital requirements. Component suppliers, cloud providers, and algorithm developers have different economics and may generate revenue before large-scale fault-tolerant computation becomes practical. The central question is whether a company's products address current customer needs or depend on future technical breakthroughs.</p>
+      </article>
+      <article>
+        <h3>What would establish a mature market?</h3>
+        <p>Independently demonstrated advantages on commercially relevant problems, measured against strong classical methods, followed by recurring customer demand for those computations.</p>
+      </article>
+    </section>
+    <footer>© 2026 Jonathan Kaufman</footer>
+  </main>
+</body>
+</html>
