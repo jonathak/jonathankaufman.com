@@ -1,46 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jonathan Kaufman advises companies and investors on corporate finance, valuation, transactions, and strategic decisions.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+      content="Jonathan Kaufman is a biotechnology executive with experience in capital formation, clinical development, licensing, strategic transactions, and public company leadership.">
   <link rel="canonical" href="https://jonathankaufman.com/">
-  <link rel="icon" href="/favicon.png" type="image/png">
-  <title>Jonathan Kaufman | Corporate Finance &amp; Strategic Advisory</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Jonathan Kaufman | Biotechnology Executive</title>
+
   <style>
-    :root { --navy:#071f3a; --ink:#263b50; --muted:#536274; --paper:#f8f7f4; --line:#d8d8d4; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.75 "Helvetica Neue",Arial,sans-serif; }
-    .page { width:min(700px,calc(100% - 44px)); margin:0 auto; padding:100px 0 65px; }
-    h1,h2 { color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-weight:400; }
-    h1 { font-size:clamp(38px,6vw,54px); line-height:1.2; letter-spacing:-.025em; margin:0 0 9px; }
-    .subtitle { color:var(--muted); font-size:12px; letter-spacing:.13em; text-transform:uppercase; margin:0; }
-    header { padding-bottom:45px; border-bottom:1px solid var(--line); }
-    section { margin-top:48px; }
-    h2 { font-size:26px; margin:0 0 15px; }
-    p { margin:0 0 17px; }
-    a { color:var(--navy); text-underline-offset:4px; }
-    a:focus-visible { outline:2px solid var(--navy); outline-offset:4px; }
-    footer { margin-top:85px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
-    @media(max-width:600px) { .page { padding-top:65px; } header { padding-bottom:32px; } section { margin-top:38px; } }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f8f7f4;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #0b2a45;
+    }
+
+    .card {
+      text-align: center;
+      max-width: 900px;
+      padding: 60px 30px;
+    }
+
+    .name-link {
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.2s ease;
+    }
+
+    .name-link:hover {
+      opacity: 0.50;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 82px);
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      margin: 0;
+      color: #071f3a;
+    }
+
+    .line {
+      width: 120px;
+      height: 2px;
+      background: #071f3a;
+      margin: 36px auto;
+    }
+
+    h2 {
+      font-size: clamp(20px, 3vw, 34px);
+      letter-spacing: 0.22em;
+      font-weight: 500;
+      margin: 0 0 28px;
+    }
+
+    .tags {
+      color: #666;
+      font-size: clamp(12px, 1.5vw, 22px);
+      letter-spacing: 0.18em;
+      margin-bottom: 60px;
+    }
+
+    .contact {
+      display: inline-block;
+      text-align: left;
+      font-size: clamp(18px, 2vw, 26px);
+      color: #222;
+      line-height: 2.2;
+    }
+
+    .contact a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #0b2a45;
+      text-decoration: underline;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 42px;
+      color: #0b2a45;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        letter-spacing: 0.08em;
+      }
+
+      h2, .tags {
+        letter-spacing: 0.12em;
+      }
+
+      .contact {
+        text-align: center;
+      }
+
+      .icon {
+        display: block;
+        margin: 12px auto 0;
+      }
+    }
+
+    .venture {
+  /* margin-top: -28px; */
+  margin-bottom: 60px;
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: #666;
+  letter-spacing: 0.08em;
+}
+
+.venture a {
+  color: #0b2a45;
+  text-decoration: none;
+  border-bottom: 1px solid #0b2a45;
+}
+
+.venture a:hover {
+  opacity: 0.6;
+}
+    
   </style>
 </head>
+
 <body>
-  <main class="page">
-    <header>
-      <h1>Jonathan Kaufman</h1>
-      <p class="subtitle">Corporate Finance &amp; Strategic Advisory</p>
-    </header>
-    <section aria-labelledby="about">
-      <h2 id="about">About</h2>
-      <p>I advise companies and investors on corporate finance, valuation, transactions, and strategic decisions, with particular experience in biotechnology and emerging technologies.</p>
-      <p>My work includes financial modeling, capital structure analysis, transaction support, and interim financial management. My background combines executive management, investment banking, technology commercialization, and quantitative research.</p>
-    </section>
-    <section aria-labelledby="contact">
-      <h2 id="contact">Contact</h2>
-      <p><a href="mailto:jon@jonathankaufman.com">jon@jonathankaufman.com</a></p>
-    </section>
-    <footer>© 2026 Jonathan Kaufman</footer>
+  <main class="card">
+    <!-- <a class="name-link" href="https://www.linkedin.com/in/jonkaufman" target="_blank" rel="noopener">  -->
+      <h1>JONATHAN KAUFMAN</h1>
+    <!-- </a> -->
+
+    <div class="line"></div>
+
+    <!--  <h2>TECHNOLOGY | CORPORATE FINANCE | FINANCIAL MODELING</h2> -->
+
+    
+    <div class="tags">
+      <span>TECHNOLOGY</span>
+      <span class="divider">|</span>
+      
+      <span>CORPORATE FINANCE</span>
+      <span class="divider">|</span>
+      
+      <span>FINANCIAL MODELING</span>
+    </div>
+    
+
+    <!--
+    <div class="venture">
+      Founder, <a href="https://elizafund.com/">The Eliza Fund</a>
+    </div>
+
+    <div class="contact">
+
+      <div>
+        <span class="icon">✉</span>
+        <a href="mailto:"></a>
+      </div>
+
+      <div>
+        <span class="icon">☎</span>
+        <a href="tel:"></a>
+      </div>
+
+      <div>
+        <span class="icon">in</span>
+        <a href="https://www.linkedin.com/in/jonkaufman" target="_blank" rel="noopener">
+          linkedin.com/in/jonkaufman
+        </a>
+      </div>
+
+      -->
+      
+    </div>
   </main>
 </body>
 </html>
