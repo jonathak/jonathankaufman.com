@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simulation and quantitative methods in finance: Monte Carlo methods, probability, option pricing, sensitivity analysis, and optimization.">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <title>Simulation &amp; Quantitative Methods | Jonathan Kaufman</title>
+  <style>
+    :root { --navy:#071f3a; --ink:#263b50; --muted:#536274; --paper:#f8f7f4; --line:#d8d8d4; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.75 "Helvetica Neue",Arial,sans-serif; }
+    .page { width:min(780px,calc(100% - 44px)); margin:0 auto; padding:62px 0 65px; }
+    h1,h2,h3 { color:var(--navy); font-family:Georgia,"Times New Roman",serif; font-weight:400; line-height:1.3; }
+    h1 { font-size:clamp(38px,6vw,55px); margin:30px 0 22px; }
+    h2 { font-size:29px; margin:0 0 22px; }
+    h3 { font-size:22px; margin:0 0 6px; }
+    p { margin:0 0 18px; }
+    a { color:var(--navy); text-underline-offset:4px; }
+    a:focus-visible { outline:2px solid var(--navy); outline-offset:4px; }
+    .parent { font-family:Georgia,"Times New Roman",serif; font-size:16px; text-decoration:none; }
+    .parent:hover { text-decoration:underline; }
+    .intro { padding-bottom:27px; }
+    section { padding:37px 0; border-top:1px solid var(--line); }
+    article { margin:0 0 26px; }
+    article:last-child { margin-bottom:0; }
+    footer { margin-top:45px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+    @media(max-width:600px) { .page { padding-top:34px; } section { padding:30px 0; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header><a class="parent" href="/financial-modeling.html">← Financial Modeling</a></header>
+    <div class="intro">
+      <h1>Simulation &amp; Quantitative Methods</h1>
+      <p>Many financial questions involve uncertain outcomes, nonlinear relationships, or instruments whose value depends on future events. Quantitative methods provide ways to represent these features explicitly and examine their consequences.</p>
+      <p>Simulation and numerical analysis can complement conventional financial models when a single forecast or a simple formula does not adequately describe the problem. Their usefulness depends on the assumptions, data, and economic relationships underlying the model.</p>
+    </div>
+    <section aria-labelledby="methods">
+      <h2 id="methods">Methods &amp; Concepts</h2>
+      <article>
+        <h3>Monte Carlo Simulation</h3>
+        <p>Monte Carlo methods generate many possible outcomes by repeatedly sampling uncertain inputs from specified probability distributions. In finance, they can be used to study the distribution of cash needs, investment returns, or contingent security payoffs rather than relying on a single projected result.</p>
+      </article>
+      <article>
+        <h3>Probability Distributions &amp; Dependence</h3>
+        <p>Modeling uncertainty requires more than assigning a range to each variable. The shapes of probability distributions, the relationships among variables, and the possibility of rare but consequential outcomes can materially affect results.</p>
+      </article>
+      <article>
+        <h3>Option Pricing</h3>
+        <p>Options and other contingent claims have payoffs that depend on the future value of an underlying asset. Models such as Black–Scholes and lattice methods use assumptions about volatility, time, interest rates, and exercise conditions to estimate value. More complex contractual features may require numerical methods.</p>
+      </article>
+      <article>
+        <h3>Sensitivity &amp; Scenario Analysis</h3>
+        <p>Sensitivity analysis measures how results change when selected assumptions vary. Scenario analysis examines coherent alternative states of the world. Both can help reveal the factors that drive a valuation or forecast before a more elaborate probabilistic model is warranted.</p>
+      </article>
+      <article>
+        <h3>Numerical Optimization</h3>
+        <p>Optimization methods search for decisions that best satisfy an objective subject to constraints. Financial applications may include capital allocation, portfolio construction, financing choices, and the calibration of model parameters.</p>
+      </article>
+    </section>
+    <section aria-labelledby="questions">
+      <h2 id="questions">Questions in Practice</h2>
+      <article>
+        <h3>How likely is a company to run short of cash?</h3>
+        <p>A probabilistic forecast can examine how uncertainty in spending, revenue, collections, or financing timing affects liquidity. The result depends on how those uncertainties and their relationships are modeled.</p>
+      </article>
+      <article>
+        <h3>When is simulation preferable to a spreadsheet scenario?</h3>
+        <p>Simulation can be useful when many uncertain variables interact or when the distribution of outcomes matters. For simpler decisions, a small set of transparent scenarios may be easier to interpret and just as informative.</p>
+      </article>
+      <article>
+        <h3>How do contractual features affect a security's value?</h3>
+        <p>Conversion rights, exercise thresholds, maturities, and other contingent terms can produce nonlinear payoffs. Modeling those payoffs helps distinguish the value of the security from the value of the underlying company.</p>
+      </article>
+      <article>
+        <h3>How much confidence should be placed in a model's output?</h3>
+        <p>Computational sophistication does not compensate for weak assumptions or poor data. Results should be evaluated for sensitivity, numerical stability, and consistency with the economic problem being represented.</p>
+      </article>
+    </section>
+    <footer>© 2026 Jonathan Kaufman</footer>
+  </main>
+</body>
+</html>
