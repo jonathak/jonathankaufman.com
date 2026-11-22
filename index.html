@@ -12,8 +12,7 @@
     main { width:100%; max-width:1100px; padding:60px 24px; text-align:center; }
     .name-row { display:flex; flex-direction:column; align-items:center; justify-content:center; }
     h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(42px,7vw,82px); font-weight:400; letter-spacing:.18em; line-height:1.2; margin:0; }
-    .surname-row { display:flex; align-items:center; justify-content:center; gap:12px; }
-    .linkedin { flex:none; display:inline-flex; align-items:center; justify-content:center; color:#687889; transition:opacity .2s; }
+    .linkedin { display:inline-flex; align-items:center; justify-content:center; color:#687889; transition:opacity .2s; }
     .linkedin:hover { opacity:.55; }
     .linkedin svg { width:18px; height:18px; fill:currentColor; }
     .line { width:120px; height:2px; background:#071f3a; margin:36px auto; }
@@ -29,19 +28,17 @@
   <main>
     <div class="name-row">
       <h1>JONATHAN</h1>
-      <div class="surname-row">
       <h1>KAUFMAN</h1>
-      <a class="linkedin" href="https://www.linkedin.com/in/jonkaufman" target="_blank" rel="noopener noreferrer" aria-label="Jonathan Kaufman on LinkedIn" title="LinkedIn">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52zM7.93 18.75H4.98V9.2h2.95v9.55zM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.75 1.36-1.55 2.79-1.55 2.98 0 3.58 1.96 3.58 4.51v5.29z"/></svg>
-      </a>
-      </div>
     </div>
     <div class="line"></div>
-    <nav aria-label="Services by business phase">
+    <nav aria-label="Navigation">
       <a href="/startup.html">STARTUP</a><span class="divider" aria-hidden="true">|</span>
       <a href="/growth.html">GROWTH</a><span class="divider" aria-hidden="true">|</span>
       <a href="/exit.html">EXIT</a><span class="divider" aria-hidden="true">|</span>
-      <a href="/biotechnology-restructuring.html">RESTRUCTURING</a>
+      <a href="/biotechnology-restructuring.html">RESTRUCTURING</a><span class="divider" aria-hidden="true">|</span>
+      <a class="linkedin" href="https://www.linkedin.com/in/jonkaufman" target="_blank" rel="noopener noreferrer" aria-label="Jonathan Kaufman on LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52zM7.93 18.75H4.98V9.2h2.95v9.55zM6.45 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42zm12.3 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.75 1.36-1.55 2.79-1.55 2.98 0 3.58 1.96 3.58 4.51v5.29z"/></svg>
+      </a>
     </nav>
   </main>
 </body>
